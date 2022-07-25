@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS 5 - 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <!-- Bài 1 -->
+      <div class="card">
+        <div class="card-header">Bài 1</div>
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ten"
+                  placeholder="Nhập tên tại đây"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Tổng Thu Nhập Năm</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="thuNhap"
+                  placeholder="Nhập tổng thu nhập năm tại đây"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Số Người Phụ Thuộc</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="nguoiPhuThuoc"
+                  placeholder="Nhập số người phụ thuộc tại đây"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button onclick="xuLi()" class="btn btn-danger mb-3">
+              Tính Tiền thuế
+            </button>
+            <div id="divResult" style="display: none">
+              <h6 id="xuatTienThue"></h6>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer" class="card-footer text-muted"></div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <!-- Bài 2 -->
+      <div class="card">
+        <div class="card-header">Bài 2</div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Chọn loại khách hàng</label>
+                <select class="form-control" id="loaiKH">
+                  <option value="chuaChon">Chọn tại đây</option>
+                  <option value="nhaDan">Nhà Dân</option>
+                  <option value="doanhNghiep">Doanh Nghiệp</option>
+                  <input
+                    id="soKetNoi"
+                    type="number"
+                    style="display: none"
+                    class="form-control mt-3"
+                    placeholder="Số kết nối"
+                  />
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="">Mã khách hàng</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="maKH"
+                  placeholder="Nhập mã khách hàng tại đây"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Số kênh cao cấp</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="soKenh"
+                  placeholder="Nhập số kênh tại đây"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button onclick="tinhToan()" class="btn btn-warning mb-3">
+              Tính Toán
+            </button>
+          </div>
+        </div>
+        <div id="ketQua1" class="card-footer text-muted"></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
