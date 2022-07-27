@@ -68,7 +68,6 @@ function display(tagTienThue, tagTen) {
 
 // Bài 2
 //Mô hình 3 khối
-
 //Đầu vào:
 //-Cho người dùng chọn loại khách hàng, nhập mã khách hàng , số kênh cao cấp và số kết nối (nếu là doanh nghiệp)
 
@@ -109,8 +108,6 @@ function tinhTienThue(tagLoaiKH, tagSoKenh, tagSoKetNoiDn) {
   return tienCap;
 }
 function hienThi(tagMaKH, tienCap) {
-  //   let currentFormat = new Intl.NumberFormat("vn-Vn");
-
   let currentFormat = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -122,7 +119,7 @@ function hienThi(tagMaKH, tienCap) {
     currentFormat.format(tienCap);
 }
 
-//Function đóng, mở tùy chọn "số kết nối" Doanh nghiệp
+//Function đóng, mở tùy chọn mục "số kết nối" của Doanh nghiệp
 document.getElementById("loaiKH").onchange = function () {
   myFunction();
 };
